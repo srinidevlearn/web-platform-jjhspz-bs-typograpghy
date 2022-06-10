@@ -3,7 +3,13 @@
     <meta charset="UTF-8" />
     <script src="script.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+      body div.container:nth-child(even) {
+        background: rgba(173, 181, 189, 0.25);
+      }
+    </style>
   </head>
+
   <body>
     <!-- heading text -->
 
@@ -15,9 +21,9 @@
       <h4>h4 heading</h4>
       <h5>h5 heading</h5>
       <h6>h6 heading</h6>
+      <hr />
     </div>
     <!-- display text -->
-
     <div class="container my-3">
       <p>
         Display headings are used to stand out more than normal headings (larger
@@ -29,6 +35,7 @@
       <h1 class="display-4">Display 4</h1>
       <h1 class="display-5">Display 5</h1>
       <h1 class="display-6">Display 6</h1>
+      <hr />
     </div>
     <!-- small text -->
 
@@ -43,16 +50,96 @@
       <h4>h4 <small>secondary sample</small></h4>
       <h5>h5 <small>secondary sample</small></h5>
       <h6>h6 <small>secondary sample</small></h6>
+      <hr />
     </div>
 
-    <!-- text break -->
+    <!-- text break and lead and text-start and text-end and text-center -->
     <div class="container my-3">
+      <p class="lead">With <span class="small">.text-break:</span></p>
+      <p></p>
       <p class="text-break">
         LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.Itwaspopularisedinthe1960swiththereleaseofLetrasetsheetscontainingLoremIpsumpassages,andmorerecentlywithdesktoppublishingsoftwarelikeAldusPageMakerincludingversionsofLoremIpsum.
       </p>
-      <p class="lead">Without .text-break:</p>
+      <p class="lead">Without <span class="small">.text-break:</span></p>
       <p>
         LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.Itwaspopularisedinthe1960swiththereleaseofLetrasetsheetscontainingLoremIpsumpassages,andmorerecentlywithdesktoppublishingsoftwarelikeAldusPageMakerincludingversionsofLoremIpsum.
+      </p>
+      <hr />
+    </div>
+    <div class="container my-3">
+      <p class="lead">
+        With <span class="small">.text-start & .text-center & .text-end</span>
+      </p>
+      <p></p>
+      <p class="text-start">Hello world @ text-start</p>
+      <p class="text-center">Hello world @ text-center</p>
+      <p class="text-end">Hello world @ text-end</p>
+      <hr />
+    </div>
+    <!-- text capitalize and text uppercase and text lowercase and textdecorations -->
+
+    <div class="container my-3">
+      <p class="text-capitalize">
+        <small>Capitalize : </small> Lorem Ipsum is simply dummy text of the
+        printing and typesetting industry.
+      </p>
+      <p class="text-uppercase">
+        <small>Uppercase : </small>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+      <p class="text-lowercase">
+        <small>Lowercase : </small>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+      <hr />
+    </div>
+    <!-- list unstyled and list inline -->
+    <div class="container my-3">
+      <p class="text-center">
+        <small>Unstyled : </small> <mark>.list-unstyled</mark>removes the
+        default list-style and left margin on list items
+        <br />
+        <kbd>Note</kbd> : applies to immedidiate children only
+      </p>
+      <ul class="list-unstyled">
+        <li>1</li>
+        <li>
+          2
+          <ul>
+            <li>2.1</li>
+            <li>2.3</li>
+          </ul>
+        </li>
+        <li>3</li>
+      </ul>
+
+      <p class="text-center">
+        <small>Inlined : </small> <mark>.list-inline</mark> for li<mark
+          >.list-inline-item</mark
+        >
+        places all list items on a single line, but use together with the
+        .list-inline-item:
+        <br />
+      </p>
+      <!-- only for level one   -->
+      <ul class="list-inline">
+        <li class="list-inline-item">1</li>
+        <li class="list-inline-item">2</li>
+        <li class="list-inline-item">3</li>
+      </ul>
+
+      <hr />
+    </div>
+    <div class="container my-3">
+      <!--   how white-space inside an element is handled.     -->
+      <p class="text-wrap bg-primary text-white" style="width: 8rem">
+        This text should overflow the parent.
+      </p>
+
+      <p class="text-nowrap bg-primary" style="width: 8rem">
+        This text should overflowtheparent.
       </p>
     </div>
   </body>
