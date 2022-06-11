@@ -285,7 +285,7 @@
         </div>
       </div>
     </section>
-    <section class="position-fixed" id="floating-btn">
+    <section class="position-fixed invisible" id="floating-btn">
       <div class="position-fixed bottom-0 end-0 m-3 mx-4">
         <button
           type="button"
@@ -309,5 +309,17 @@
         behavior: 'smooth',
       });
     }
+    window.addEventListener('scroll', (event) => {
+      if (window.pageYOffset >= 300) {
+        document
+          .getElementById('floating-btn')
+          .classList.replace('invisible', 'visible');
+      } else {
+        document
+          .getElementById('floating-btn')
+          .classList.replace('visible', 'invisible');
+      }
+      console.log('Scrolling...', window.pageYOffset);
+    });
   </script>
 </html>
