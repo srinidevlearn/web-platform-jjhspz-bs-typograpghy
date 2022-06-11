@@ -1,298 +1,313 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+      body div.container:nth-child(even) {
+        background: rgba(173, 181, 189, 0.25);
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <script src="script.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
-  <style>
-    body div.container:nth-child(even) {
-      background: rgba(173, 181, 189, 0.25);
+  <body>
+    <div class="card mx-auto" style="max-width: 25rem">
+      <div class="card-header text-center text-center">Content</div>
+      <div class="card-body">
+        <a href="#heading" class="d-block">Heading</a>
+        <a href="#display" class="d-block">Display</a>
+        <a href="#small" class="d-block">Small</a>
+        <a href="#text-movements" class="d-block">Text placements</a>
+        <a href="#text-transforms" class="d-block">Text transforms</a>
+
+        <a href="#font-helpers" class="d-block">Fonts & line height helpers</a>
+
+        <a href="#text-wrap" class="d-block">Text-wrap</a>
+        <a href="#list-transform-options" class="d-block text-capitalize"
+          >list transform options</a
+        >
+      </div>
+    </div>
+
+    <!-- heading text -->
+    <section class="container my-3" id="heading">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Headings</div>
+        <div class="card-body">
+          <h1>h1 heading</h1>
+          <h2>h2 heading</h2>
+          <h3>h3 heading</h3>
+          <h4>h4 heading</h4>
+          <h5>h5 heading</h5>
+          <h6>h6 heading</h6>
+        </div>
+      </div>
+    </section>
+    <!-- display text -->
+    <section class="container my-3" id="display">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Display</div>
+        <div class="card-body">
+          <p class="card-text">
+            Display headings are used to stand out more than normal headings
+            (larger font-size and lighter font-weight):
+          </p>
+          <h1 class="display-1">Display 1</h1>
+          <h1 class="display-2">Display 2</h1>
+          <h1 class="display-3">Display 3</h1>
+          <h1 class="display-4">Display 4</h1>
+          <h1 class="display-5">Display 5</h1>
+          <h1 class="display-6">Display 6</h1>
+        </div>
+      </div>
+    </section>
+    <!-- small text -->
+    <section class="container mt-3" id="small">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Small</div>
+        <div class="card-body">
+          <p class="card-text">
+            The small element (and the .small class) is used to create a
+            smaller, secondary text in any heading:
+          </p>
+          <h1>h1 <small class="bg-light">secondary sample</small></h1>
+          <h2>h2 <small>secondary sample</small></h2>
+          <h3>h3 <small>secondary sample</small></h3>
+          <h4>h4 <small>secondary sample</small></h4>
+          <h5>h5 <small>secondary sample</small></h5>
+          <h6>h6 <small>secondary sample</small></h6>
+        </div>
+      </div>
+    </section>
+    <!-- text break and lead and text-start and text-end and text-center -->
+    <section class="container my-3" id="text-breaking">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Text Break</div>
+        <div class="card-body">
+          <p class="lead">With <span class="small">.text-break:</span></p>
+          <p></p>
+          <p class="text-break">
+            LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.Itwaspopularisedinthe1960swiththereleaseofLetrasetsheetscontainingLoremIpsumpassages,andmorerecentlywithdesktoppublishingsoftwarelikeAldusPageMakerincludingversionsofLoremIpsum.
+          </p>
+        </div>
+      </div>
+      <p class="lead">Without <span class="small">.text-break:</span></p>
+      <p>
+        LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.Itwaspopularisedinthe1960swiththereleaseofLetrasetsheetscontainingLoremIpsumpassages,andmorerecentlywithdesktoppublishingsoftwarelikeAldusPageMakerincludingversionsofLoremIpsum.
+      </p>
+      <hr />
+    </section>
+    <section class="container my-3" id="text-movements">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Text Placements</div>
+        <div class="card-body">
+          <p class="lead">
+            With
+            <span class="small text-decoration-underline"
+              >.text-start & .text-center & .text-end</span
+            >
+          </p>
+          <p></p>
+          <p class="text-start">Hello world @ text-start</p>
+          <p class="text-center">Hello world @ text-center</p>
+          <p class="text-end">Hello world @ text-end</p>
+        </div>
+      </div>
+    </section>
+    <!-- text capitalize and text uppercase and text lowercase and textdecorations -->
+    <section class="container my-3" id="font-helpers">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Font Helpers</div>
+        <div class="card-body">
+          <div class="card">
+            <div class="card-header">Font Size</div>
+            <div class="card-body">
+              <small class="d-block">
+                applies only font-size whereas h1 to h6 applies bold and line
+                height
+              </small>
+              <p class="fs-1">.fs-1 text</p>
+              <p class="fs-2">.fs-2 text</p>
+              <p class="fs-3">.fs-3 text</p>
+              <p class="fs-4">.fs-4 text</p>
+              <p class="fs-5">.fs-5 text</p>
+              <p class="fs-6">.fs-6 text</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Font Weights</div>
+            <div class="card-body">
+              <small class="d-block"> applies only font-weight to fonts </small>
+              <p class="fw-bold">Bold text.</p>
+              <p class="fw-normal">Normal weight text.</p>
+              <p class="fw-light">Light weight text.</p>
+              <p class="fst-italic">Italic text.</p>
+              <p class="fst-normal">Text with normal font style</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Line Heights</div>
+            <div class="card-body">
+              <small class="d-block text-secondary">
+                applies height to above and below inline element
+              </small>
+
+              <div class="lh-1">lh-1</div>
+              <div class="lh-1">
+                This is a long paragraph written to show how the line-height of
+                an element is affected by our utilities. Classes are applied to
+                the element itself or sometimes the parent element. These
+                classes can be customized as needed with our utility API.
+              </div>
+
+              <hr />
+
+              <div class="lh-sm">lh-sm</div>
+              <div class="lh-sm">
+                This is a long paragraph written to show how the line-height of
+                an element is affected by our utilities. Classes are applied to
+                the element itself or sometimes the parent element. These
+                classes can be customized as needed with our utility API.
+              </div>
+
+              <hr />
+              <div class="lh-base">lh-base</div>
+              <div class="lh-base">
+                This is a long paragraph written to show how the line-height of
+                an element is affected by our utilities. Classes are applied to
+                the element itself or sometimes the parent element. These
+                classes can be customized as needed with our utility API.
+              </div>
+              <hr />
+
+              <div class="lh-lg">lh-lg</div>
+              <div class="lh-lg">
+                This is a long paragraph written to show how the line-height of
+                an element is affected by our utilities. Classes are applied to
+                the element itself or sometimes the parent element. These
+                classes can be customized as needed with our utility API.
+              </div>
+
+              <hr />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Text decoration</div>
+            <div class="card-body">
+              <small class="d-block text-secondary">
+                applies styles to text decorations
+              </small>
+              <p class="text-decoration-underline">
+                This text has a line underneath it.
+              </p>
+              <p class="text-decoration-line-through">
+                This text has a line going through it.
+              </p>
+              <a href="#" class="text-decoration-none"
+                >This link has its text decoration removed</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container my-3" id="text-transforms">
+      <div class="card">
+        <div class="card-header fs-5 text-center">Text Transformation</div>
+        <div class="card-body">
+          <p class="text-capitalize">
+            <small>Capitalize : </small> Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry.
+          </p>
+          <p class="text-uppercase">
+            <small>Uppercase : </small>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <p class="text-lowercase">
+            <small>Lowercase : </small>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- list unstyled and list inline -->
+    <section class="container my-3" id="list-transform-options">
+      <div class="card">
+        <div class="card-header fs-5 text-center">List Transform Options</div>
+        <div class="card-body">
+          <p class="text-center">
+            <small>Unstyled : </small> <mark>.list-unstyled</mark>removes the
+            default list-style and left margin on list items
+            <br />
+            <kbd>Note</kbd> : applies to immedidiate children only
+          </p>
+          <ul class="list-unstyled">
+            <li>1</li>
+            <li>
+              2
+              <ul>
+                <li>2.1</li>
+                <li>2.3</li>
+              </ul>
+            </li>
+            <li>3</li>
+          </ul>
+          <p class="text-center">
+            <small>Inlined : </small> <mark>.list-inline</mark> for li<mark
+              >.list-inline-item</mark
+            >
+            places all list items on a single line, but use together with the
+            .list-inline-item:
+            <br />
+          </p>
+          <!-- only for level one   -->
+          <ul class="list-inline">
+            <li class="list-inline-item">1</li>
+            <li class="list-inline-item">2</li>
+            <li class="list-inline-item">3</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container my-3 mb-5" id="text-wrap">
+      <!--   how white-space inside an element is handled.     -->
+      <div class="card">
+        <div class="card-header fs-5 text-center">Text Wrap</div>
+        <div class="card-body">
+          <p class="text-wrap bg-primary text-white" style="width: 8rem">
+            This text should overflow the parent.
+          </p>
+          <p class="text-nowrap bg-primary" style="width: 8rem">
+            This text should overflowtheparent.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="position-fixed" id="floating-btn">
+      <div class="position-fixed bottom-0 end-0">
+        <button
+          type="button"
+          class="btn rounded-pill btn-sm btn-primary"
+          onClick="moveToTop()"
+        >
+          Move Up
+        </button>
+      </div>
+    </section>
+  </body>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function moveToTop() {
+      return window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
     }
-  </style>
-</head>
-
-<body>
-  <div class="card mx-auto" style="max-width: 25rem">
-    <div class="card-header text-center text-center">Content</div>
-    <div class="card-body">
-      <a href="#heading" class="d-block">Heading</a>
-      <a href="#display" class="d-block">Display</a>
-      <a href="#small" class="d-block">Small</a>
-      <a href="#text-movements" class="d-block">Text placements</a>
-      <a href="#text-transforms" class="d-block">Text transforms</a>
-      <a href="#font-helpers" class="d-block">Fonts & line height helpers</a>
-      <a href="#text-wrap" class="d-block">Text-wrap</a>
-      <a href="#list-transform-options" class="d-block text-capitalize">list transform options</a>
-    </div>
-  </div>
-
-  <!-- heading text -->
-  <section class="container my-3" id="heading">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Headings</div>
-      <div class="card-body">
-        <h1>h1 heading</h1>
-        <h2>h2 heading</h2>
-        <h3>h3 heading</h3>
-        <h4>h4 heading</h4>
-        <h5>h5 heading</h5>
-        <h6>h6 heading</h6>
-      </div>
-    </div>
-
-  </section>
-  <!-- display text -->
-  <section class="container my-3" id="display">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Display</div>
-      <div class="card-body">
-        <p class="card-text">
-          Display headings are used to stand out more than normal headings (larger
-          font-size and lighter font-weight):
-        </p>
-        <h1 class="display-1">Display 1</h1>
-        <h1 class="display-2">Display 2</h1>
-        <h1 class="display-3">Display 3</h1>
-        <h1 class="display-4">Display 4</h1>
-        <h1 class="display-5">Display 5</h1>
-        <h1 class="display-6">Display 6</h1>
-      </div>
-    </div>
-  </section>
-  <!-- small text -->
-  <section class="container mt-3" id="small">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Small</div>
-      <div class="card-body">
-        <p class="card-text">
-          The small element (and the .small class) is used to create a smaller,
-          secondary text in any heading:
-        </p>
-        <h1>h1 <small class="bg-light">secondary sample</small></h1>
-        <h2>h2 <small>secondary sample</small></h2>
-        <h3>h3 <small>secondary sample</small></h3>
-        <h4>h4 <small>secondary sample</small></h4>
-        <h5>h5 <small>secondary sample</small></h5>
-        <h6>h6 <small>secondary sample</small></h6>
-      </div>
-    </div>
-
-  </section>
-  <!-- text break and lead and text-start and text-end and text-center -->
-  <section class="container my-3" id="text-breaking">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Text Break</div>
-      <div class="card-body">
-        <p class="lead">With <span class="small">.text-break:</span></p>
-        <p></p>
-        <p class="text-break">
-          LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.Itwaspopularisedinthe1960swiththereleaseofLetrasetsheetscontainingLoremIpsumpassages,andmorerecentlywithdesktoppublishingsoftwarelikeAldusPageMakerincludingversionsofLoremIpsum.
-        </p>
-      </div>
-    </div>
-    <p class="lead">Without <span class="small">.text-break:</span></p>
-    <p>
-      LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.Itwaspopularisedinthe1960swiththereleaseofLetrasetsheetscontainingLoremIpsumpassages,andmorerecentlywithdesktoppublishingsoftwarelikeAldusPageMakerincludingversionsofLoremIpsum.
-    </p>
-    <hr />
-  </section>
-  <section class="container my-3" id="text-movements">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Text Placements</div>
-      <div class="card-body">
-        <p class="lead">
-          With <span class="small text-decoration-underline">.text-start & .text-center & .text-end</span>
-        </p>
-        <p></p>
-        <p class="text-start">Hello world @ text-start</p>
-        <p class="text-center">Hello world @ text-center</p>
-        <p class="text-end">Hello world @ text-end</p>
-      </div>
-    </div>
-  </section>
-  <!-- text capitalize and text uppercase and text lowercase and textdecorations -->
-  <section class="container my-3" id="font-helpers">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Font Helpers</div>
-      <div class="card-body">
-        <div class="card">
-          <div class="card-header">Font Size</div>
-          <div class="card-body">
-            <small class="d-block">
-              applies only font-size whereas h1 to h6 applies bold and line height
-
-            </small>
-            <p class="fs-1">.fs-1 text</p>
-            <p class="fs-2">.fs-2 text</p>
-            <p class="fs-3">.fs-3 text</p>
-            <p class="fs-4">.fs-4 text</p>
-            <p class="fs-5">.fs-5 text</p>
-            <p class="fs-6">.fs-6 text</p>
-          </div>
-
-        </div>
-        <div class="card">
-          <div class="card-header">Font Weights</div>
-          <div class="card-body">
-            <small class="d-block">
-              applies only font-weight to fonts
-            </small>
-            <p class="fw-bold">Bold text.</p>
-            <p class="fw-normal">Normal weight text.</p>
-            <p class="fw-light">Light weight text.</p>
-            <p class="fst-italic">Italic text.</p>
-            <p class="fst-normal">Text with normal font style</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">Line Heights</div>
-          <div class="card-body">
-            <small class="d-block text-secondary">
-              applies height to above and below inline element
-            </small>
-            <p class="lh-1">
-            <div class="card-text">lh-1</div>
-            This is a long paragraph written to show how the line-height of an
-            element is affected by our utilities. Classes are applied to the element
-            itself or sometimes the parent element. These classes can be customized
-            as needed with our utility API.
-            </p>
-            <hr />
-            <p class="lh-sm">
-            <div class="card-text">lh-sm</div>
-            This is a long paragraph written to show how the line-height of an
-            element is affected by our utilities. Classes are applied to the element
-            itself or sometimes the parent element. These classes can be customized
-            as needed with our utility API.
-            </p>
-            <hr />
-            <p class="lh-base">
-            <div class="card-text">lh-base</div>
-            This is a long paragraph written to show how the line-height of an
-            element is affected by our utilities. Classes are applied to the element
-            itself or sometimes the parent element. These classes can be customized
-            as needed with our utility API.
-            </p>
-            <hr />
-            <p class="lh-lg">
-            <div class="card-text">lh-lg</div>
-            This is a long paragraph written to show how the line-height of an
-            element is affected by our utilities. Classes are applied to the element
-            itself or sometimes the parent element. These classes can be customized
-            as needed with our utility API.
-            </p>
-            <hr />
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">Text decoration</div>
-          <div class="card-body">
-            <small class="d-block text-secondary">
-              applies styles to text decorations
-            </small>
-            <p class="text-decoration-underline">
-              This text has a line underneath it.
-            </p>
-            <p class="text-decoration-line-through">
-              This text has a line going through it.
-            </p>
-            <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <section class="container my-3" id="text-transforms">
-    <div class="card">
-      <div class="card-header fs-5 text-center">Text Transformation</div>
-      <div class="card-body">
-        <p class="text-capitalize">
-          <small>Capitalize : </small> Lorem Ipsum is simply dummy text of the
-          printing and typesetting industry.
-        </p>
-        <p class="text-uppercase">
-          <small>Uppercase : </small>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <p class="text-lowercase">
-          <small>Lowercase : </small>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- list unstyled and list inline -->
-  <section class="container my-3" id="list-transform-options">
-    <div class="card">
-      <div class="card-header fs-5 text-center">List Transform Options</div>
-      <div class="card-body">
-        <p class="text-center">
-          <small>Unstyled : </small> <mark>.list-unstyled</mark>removes the
-          default list-style and left margin on list items
-          <br />
-          <kbd>Note</kbd> : applies to immedidiate children only
-        </p>
-        <ul class="list-unstyled">
-          <li>1</li>
-          <li>
-            2
-            <ul>
-              <li>2.1</li>
-              <li>2.3</li>
-            </ul>
-          </li>
-          <li>3</li>
-        </ul>
-        <p class="text-center">
-          <small>Inlined : </small> <mark>.list-inline</mark> for li<mark>.list-inline-item</mark>
-          places all list items on a single line, but use together with the
-          .list-inline-item:
-          <br />
-        </p>
-        <!-- only for level one   -->
-        <ul class="list-inline">
-          <li class="list-inline-item">1</li>
-          <li class="list-inline-item">2</li>
-          <li class="list-inline-item">3</li>
-        </ul>
-      </div>
-    </div>
-
-  </section>
-  <section class="container my-3 mb-5" id="text-wrap">
-    <!--   how white-space inside an element is handled.     -->
-    <div class="card">
-      <div class="card-header fs-5 text-center">Text Wrap</div>
-      <div class="card-body">
-        <p class="text-wrap bg-primary text-white" style="width: 8rem">
-          This text should overflow the parent.
-        </p>
-        <p class="text-nowrap bg-primary" style="width: 8rem">
-          This text should overflowtheparent.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="position-fixed" id="floating-btn">
-    <div class="position-fixed bottom-0 end-0">
-      <button type="button" class="btn rounded-pill btn-sm btn-primary" onClick="moveToTop()">
-        Move Up
-      </button>
-    </div>
-  </section>
-</body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  function moveToTop() {
-    return window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-</script>
-
+  </script>
 </html>
